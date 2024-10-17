@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Arial, sans-serif';
+}
+
+@font-face {
+  font-family: 'AfacadFlux';
+  src: url(fonts/AfacadFlux-VariableFont_slnt\,wght.ttf);
+}
+
+/* --------------------- NavBar --------------------- */
+
+.navbarCon {
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  background-color: #0a2351;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 25px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.navbar .logo {
+  color: white
+  ;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'AfacadFlux';
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.navbar .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'AfacadFlux';
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+ .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'AfacadFlux';
+}
+
+.navbar .nav-link:hover,  .nav-link:hover {
+  color: #79777a;
+}
+
+.search-bar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.search-bar input {
+  width: 280px;
+  padding: 10px 20px 10px 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  outline: none;
+  transition: box-shadow 0.3s, border 0.3s;
+  background-color: #F0F0F0;
+}
+
+.search-bar input::placeholder {
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'AfacadFlux';
+  letter-spacing: 0.5px;
+}
+
+.search-bar .fas.fa-search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.dropdown {
+  margin-top: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: ghostwhite;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  top: 40px;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+  font-family: 'RobotoMono';
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*--------------------- carousel ---------------------*/
+.carousel-slide {
+  display: flex;
+  margin-top: 30px;
+ 
+}
+
+.carousel-slide img {
+  margin: 0 auto;
+  width: 99%;
+  max-width: 1440px;
+}
+
+/* --------------------- Home page --------------------- */
+
