@@ -44,13 +44,13 @@ export default function BasicDemo() {
         },
         {
             name: 'ASUS',
-            des: 'Asus ROG Strix SCAR 18 Gaming Laptop, Intel Core i9, 64GB RAM, 2TB SSD, 18-inch, nVidia GeForce – Black',
+            des: 'Asus ROG Strix SCAR 18 Gaming Laptop, Intel Core i9, 64GB RAM, 2TB SSD, nVidia GeForce – Black',
             price: 2499,
             image: it14
         },
         {
             name: 'HUAWEI',
-            des: 'Huawei MateBook X Pro 2023 Laptop, Intel Core i7 Processor, 16 GB RAM, 1 TB SSD, 14.2-inch, Intel Iris Xe Graphics - White',
+            des: 'Huawei MateBook X Pro 2023 Laptop, Intel Core i7 Processor, 16 GB RAM, 1 TB SSD - White',
             price: 745,
             image: it15
         },

@@ -17,6 +17,9 @@ import ItemCarousel from '../itemCarousel1'
 import ItemCarousel2 from '../itemCarousel2'
 import ItemCarousel3 from '../itemCarousel3'
 
+// mid banner
+import midban1 from '../pics/banners/midBan1.jpg';
+
 const HomePage = () => {
 
     return (
@@ -45,6 +48,14 @@ const HomePage = () => {
         <div className='itemCarouselContainer'>
             <h3 className='itemCarouselHead'>Mobile Phones</h3>
             <ItemCarousel2></ItemCarousel2>
+        </div>
+
+        {/* mid banner */}
+        <div className="midBannerCata">
+            <img src={midban1} alt="Banner" />
+            <div className="bannerOverlay">
+                <button>See More</button>
+            </div>
         </div>
 
         <div className='itemCarouselContainer'>
