@@ -134,7 +134,7 @@
 /*--------------------- carousel ---------------------*/
 .carousel-slide {
   display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
  
 }
 
@@ -155,8 +155,7 @@
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: ghostwhite;
+  justify-content: center;
 }
 
 .displayCata img{
