@@ -244,9 +244,10 @@
   }
 
   .displayCata img {
-    max-width: 40%; /* Allow 2 images per row */
+    max-width: 35%; 
     margin-bottom: 15px;
   }
+
 }
 
 /* Media query for screen sizes below 480px */
@@ -254,6 +255,6 @@
 
   /* display category */
   .displayCata img {
-    max-width: 60%;
+    max-width: 40%;
   }
 }

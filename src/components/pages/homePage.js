@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
 
         <div className='itemCarouselContainer'>
-            <h3 className='itemCarouselHead'>Mobile Phones</h3>
+            <h3 className='itemCarouselHead'>Laptops</h3>
             <ItemCarousel3></ItemCarousel3>
         </div>
 
