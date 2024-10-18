@@ -146,3 +146,50 @@
 
 /* --------------------- Home page --------------------- */
 
+/* display category */
+
+.displayCata {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: ghostwhite;
+}
+
+.displayCata img{
+  cursor: pointer;
+  max-width: 80%;
+  height: auto;
+}
+
+
+/*--------------------- responsive ---------------------*/
+
+/* Media query for screen sizes below 1200px */
+@media (max-width: 1200px) {
+  .displayCata {
+    justify-content: center;
+  }
+}
+
+/* Media query for screen sizes below 768px */
+@media (max-width: 768px) {
+  .displayCata {
+    justify-content: center;
+  }
+
+  .displayCata img {
+    max-width: 40%; /* Allow 2 images per row */
+    margin-bottom: 15px;
+  }
+}
+
+/* Media query for screen sizes below 480px */
+@media (max-width: 480px) {
+  .displayCata img {
+    max-width: 60%;
+  }
+}
