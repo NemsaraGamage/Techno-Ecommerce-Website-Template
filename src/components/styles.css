@@ -10,6 +10,11 @@
   src: url(fonts/AfacadFlux-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(fonts/Poppins-Medium.ttf);
+}
+
 /* --------------------- NavBar --------------------- */
 
 .navbarCon {
@@ -164,11 +169,67 @@
   height: auto;
 }
 
+/* Item Carousel */
+
+.itemCarouselHead{
+  font-size: 27px;
+  margin: 60px 0 50px 0;
+  text-align: left;
+  margin-left: 55px;
+  font-family: 'Poppins';
+  text-decoration: underline;
+}
+
+.itemCarouselDescription h4{
+  font-size: 19px;
+  margin-top: 20px;
+  font-family: 'Poppins';
+}
+
+.itemCarouselDescription h6{
+  font-size: 16.5px;
+  font-family: 'AfacadFlux';
+}
+
+.itemCarouselDescription h6:nth-of-type(1){
+  margin: 8px 0 8px 0;
+  color: #808080;
+}
+
+.itemCarouselDescription h6:nth-of-type(2){
+  margin-bottom: 10px;
+}
+
+.itemCarouselContainer{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.addCartBtn {
+  background-color: #0A2351;
+  color: white; 
+  border: none;
+  padding: 10px 20px; 
+  font-size: 14px;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-weight: 700;
+  font-family: 'AfacadFlux';
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.addCartBtn:hover {
+  background-color: #0E4F7E; 
+  transform: scale(1.05); 
+}
 
 /*--------------------- responsive ---------------------*/
 
 /* Media query for screen sizes below 1200px */
 @media (max-width: 1200px) {
+
+  /* display category */
   .displayCata {
     justify-content: center;
   }
@@ -176,6 +237,8 @@
 
 /* Media query for screen sizes below 768px */
 @media (max-width: 768px) {
+
+  /* display category */
   .displayCata {
     justify-content: center;
   }
@@ -188,6 +251,8 @@
 
 /* Media query for screen sizes below 480px */
 @media (max-width: 480px) {
+
+  /* display category */
   .displayCata img {
     max-width: 60%;
   }
