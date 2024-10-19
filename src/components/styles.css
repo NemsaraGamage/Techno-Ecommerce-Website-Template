@@ -176,7 +176,7 @@
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 79px;
 }
 
 .midBannerCata img {
@@ -227,7 +227,7 @@
 
 /* Item Carousel */
 
-.itemCarouselHead{
+.itemCarouselHead {
   font-size: 25px;
   margin: 60px 0 50px 0;
   text-align: left;
@@ -236,27 +236,33 @@
   text-decoration: underline;
 }
 
-.itemCarouselDescription h4{
+.itemCarouselDescription h4 {
   font-size: 19px;
   margin-top: 20px;
   font-family: 'Poppins';
+  transition: color 0.3s ease;
 }
 
-.itemCarouselDescription h6{
+.itemCarouselDescription h4:hover {
+  color: #0E4F7E;
+}
+
+.itemCarouselDescription h6 {
   font-size: 16.5px;
   font-family: 'AfacadFlux';
 }
 
-.itemCarouselDescription h6:nth-of-type(1){
+.itemCarouselDescription h6:nth-of-type(1) {
   margin: 8px 0 8px 0;
   color: #808080;
 }
 
-.itemCarouselDescription h6:nth-of-type(2){
+.itemCarouselDescription h6:nth-of-type(2) {
   margin-bottom: 10px;
+  font-size: 19px;
 }
 
-.itemCarouselContainer{
+.itemCarouselContainer {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -264,20 +270,20 @@
 
 .addCartBtn {
   background-color: #0A2351;
-  color: white; 
+  color: white;
   border: none;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   font-size: 14px;
-  border-radius: 5px; 
-  cursor: pointer; 
+  border-radius: 5px;
+  cursor: pointer;
   font-weight: 700;
   font-family: 'AfacadFlux';
-  transition: background-color 0.3s ease, transform 0.3s ease; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .addCartBtn:hover {
-  background-color: #0E4F7E; 
-  transform: scale(1.05); 
+  background-color: #0E4F7E;
+  transform: scale(1.05);
 }
 
 /*--------------------- responsive ---------------------*/
@@ -302,6 +308,12 @@
   .displayCata img {
     max-width: 35%; 
     margin-bottom: 15px;
+  }
+
+  /* Item Carousel */
+  .itemCarouselHead{
+    text-align: center;
+    margin-left: 0px;
   }
 
 }

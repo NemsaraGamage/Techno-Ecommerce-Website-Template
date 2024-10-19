@@ -16,6 +16,8 @@ import disCata4 from '../pics/introCata/cat4.jpg'
 import ItemCarousel from '../itemCarousel1'
 import ItemCarousel2 from '../itemCarousel2'
 import ItemCarousel3 from '../itemCarousel3'
+import ItemCarousel4 from '../itemCarousel4'
+import ItemCarousel5 from '../itemCarousel5'
 
 // mid banner
 import midban1 from '../pics/banners/midBan1.jpg';
@@ -51,16 +53,29 @@ const HomePage = () => {
         </div>
 
         {/* mid banner */}
+        <br></br>
         <div className="midBannerCata">
             <img src={midban1} alt="Banner" />
             <div className="bannerOverlay">
                 <button>See More</button>
             </div>
         </div>
+        <br></br>
 
         <div className='itemCarouselContainer'>
             <h3 className='itemCarouselHead'>Laptops</h3>
             <ItemCarousel3></ItemCarousel3>
+        </div>
+
+        <div className='itemCarouselContainer'>
+            <h3 className='itemCarouselHead'>Gift Card's</h3>
+            <ItemCarousel4></ItemCarousel4>
+        </div>
+
+        <br></br>
+        <div className='itemCarouselContainer'>
+            <h3 className='itemCarouselHead'>Gaming</h3>
+            <ItemCarousel5></ItemCarousel5>
         </div>
 
         </>
