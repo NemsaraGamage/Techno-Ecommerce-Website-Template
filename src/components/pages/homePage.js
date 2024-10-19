@@ -73,11 +73,13 @@ const HomePage = () => {
             <ItemCarousel3></ItemCarousel3>
         </div>
 
+        <br></br>
         <div className='itemCarouselContainer'>
             <h3 className='itemCarouselHead'>Gift Card's</h3>
             <ItemCarousel4></ItemCarousel4>
         </div>
 
+        <br></br>
         <br></br>
         <div className='itemCarouselContainer'>
             <h3 className='itemCarouselHead'>Gaming</h3>
