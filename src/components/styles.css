@@ -157,8 +157,7 @@
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  margin-top: 30px;
-  display: flex;
+  margin-top: 40px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -378,7 +377,17 @@
 @media (max-width: 480px) {
 
   /* display category */
-  .displayCata img {
-    max-width: 40%;
+  .displayCata {
+    margin-top: 40px;
   }
+
+  .displayCata img {
+    max-width: 31%;
+  }
+
+  /* items carousel */
+  .itemCarouselHead {
+    margin-top: 30px;
+  }
+
 }
