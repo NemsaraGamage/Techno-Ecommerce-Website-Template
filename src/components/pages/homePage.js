@@ -3,6 +3,8 @@ import '../styles.css';
 import NavBarHead from '../NavBar';
 import Footer from '../Footer';
 
+// npm run deploy
+
 // banners
 import Carousel from '../carousel'
 
@@ -23,9 +25,6 @@ import ItemCarousel5 from '../itemCarousel5'
 
 // mid banner
 import midban1 from '../pics/banners/midBan1.jpg';
-
-// category carousel 
-import cc1 from '../pics/cateCarosuel/cc1.jpg'
 
 const HomePage = () => {
 

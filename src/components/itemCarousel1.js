@@ -81,7 +81,7 @@ export default function BasicDemo() {
                     <img
                         src={product.image}
                         alt={product.name}
-                        className="w-6 shadow-2"
+                        className="w-6 shadow-2 itemCarImg"
                         style={{ maxHeight: '200px', objectFit: 'contain' }} // Ensure images fit within the container
                     />
                 </div>
