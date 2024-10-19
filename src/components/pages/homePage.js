@@ -78,6 +78,9 @@ const HomePage = () => {
             <ItemCarousel5></ItemCarousel5>
         </div>
 
+        {/* footer */}
+        <Footer></Footer>
+
         </>
     )
 
