@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
+// npm run deploy
+
 import it21 from './pics/items/it21.png'
 import it22 from './pics/items/it22.png'
 import it23 from './pics/items/it23.png'

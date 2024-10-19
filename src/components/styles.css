@@ -170,7 +170,7 @@
 
 /* middle banner */
 
-.midBannerCata {
+.midBannerCat {
   position: relative;
   width: 100%;
   max-width: 1500px;
@@ -178,14 +178,14 @@
   margin-top: 79px;
 }
 
-.midBannerCata img {
+.midBannerCat img {
   max-width: 80%;
   width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-.midBannerCata:hover img {
+.midBannerCat:hover img {
   transform: scale(1.05); /* Zoom effect on hover */
 }
 
@@ -203,7 +203,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.midBannerCata:hover .bannerOverlay {
+.midBannerCat:hover .bannerOverlay {
   opacity: 1; 
 }
 
@@ -376,6 +376,15 @@
 /* Media query for screen sizes below 480px */
 @media (max-width: 480px) {
 
+  /* carousel */
+  .carousel-slide{
+    margin-top: 10px;
+  }
+
+  .carousel-slide img {
+    max-width: 100%;
+  }
+
   /* display category */
   .displayCata {
     margin-top: 40px;
@@ -385,9 +394,23 @@
     max-width: 31%;
   }
 
+  /* middle banner */
+  .midBannerCat {
+    margin-top: 50px; /* Adjust margin for mobile */
+  }
+
+  .midBannerCat img {
+    max-width: 100%; /* Ensure the image takes full width */
+    padding: 0 10px; /* Add some padding for spacing */
+  }
+
   /* items carousel */
   .itemCarouselHead {
     margin-top: 30px;
+  }
+
+  .itemCarImg{
+    max-width: 150px;
   }
 
 }

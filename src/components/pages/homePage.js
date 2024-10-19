@@ -61,7 +61,7 @@ const HomePage = () => {
 
         {/* mid banner */}
         <br></br>
-        <div className="midBannerCata">
+        <div className="midBannerCat">
             <img src={midban1} alt="Banner" />
             <div className="bannerOverlay">
                 <button>See More</button>
