@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Techno-Ecommerce-Website-Template/static/css/main.7ca5471e.css",
-    "main.js": "/Techno-Ecommerce-Website-Template/static/js/main.95da2538.js",
+    "main.css": "/Techno-Ecommerce-Website-Template/static/css/main.e13960ec.css",
+    "main.js": "/Techno-Ecommerce-Website-Template/static/js/main.f907eef2.js",
     "static/js/453.9e03598e.chunk.js": "/Techno-Ecommerce-Website-Template/static/js/453.9e03598e.chunk.js",
     "static/media/it7.png": "/Techno-Ecommerce-Website-Template/static/media/it7.b1bec411e618efc90036.png",
     "static/media/it5.png": "/Techno-Ecommerce-Website-Template/static/media/it5.0588f94c0080c61670c4.png",
@@ -43,12 +43,12 @@
     "static/media/cat2.jpg": "/Techno-Ecommerce-Website-Template/static/media/cat2.844305f53fa37acc1dc2.jpg",
     "static/media/logo.svg": "/Techno-Ecommerce-Website-Template/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Techno-Ecommerce-Website-Template/index.html",
-    "main.7ca5471e.css.map": "/Techno-Ecommerce-Website-Template/static/css/main.7ca5471e.css.map",
-    "main.95da2538.js.map": "/Techno-Ecommerce-Website-Template/static/js/main.95da2538.js.map",
+    "main.e13960ec.css.map": "/Techno-Ecommerce-Website-Template/static/css/main.e13960ec.css.map",
+    "main.f907eef2.js.map": "/Techno-Ecommerce-Website-Template/static/js/main.f907eef2.js.map",
     "453.9e03598e.chunk.js.map": "/Techno-Ecommerce-Website-Template/static/js/453.9e03598e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ca5471e.css",
-    "static/js/main.95da2538.js"
+    "static/css/main.e13960ec.css",
+    "static/js/main.f907eef2.js"
   ]
 }
