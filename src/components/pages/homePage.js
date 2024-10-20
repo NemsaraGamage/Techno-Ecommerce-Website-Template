@@ -22,9 +22,12 @@ import ItemCarousel2 from '../itemCarousel2'
 import ItemCarousel3 from '../itemCarousel3'
 import ItemCarousel4 from '../itemCarousel4'
 import ItemCarousel5 from '../itemCarousel5'
+import ItemCarousel6 from '../itemCarousel6'
 
 // mid banner
 import midban1 from '../pics/banners/midBan1.jpg';
+import midban2 from '../pics/banners/midban2.jpg';
+import midban3 from '../pics/banners/midban3.jpg';
 
 const HomePage = () => {
 
@@ -68,6 +71,7 @@ const HomePage = () => {
         </div>
         <br></br>
 
+        {/* item carousels */}
         <div className='itemCarouselContainer'>
             <h3 className='itemCarouselHead'>Laptops</h3>
             <ItemCarousel3></ItemCarousel3>
@@ -84,6 +88,19 @@ const HomePage = () => {
         <div className='itemCarouselContainer'>
             <h3 className='itemCarouselHead'>Gaming</h3>
             <ItemCarousel5></ItemCarousel5>
+        </div>
+
+        {/* middle banner */}
+        <br></br>
+        <div className="middleBanner2">
+            <img src={midban2} alt="Banner" />
+            <img src={midban3} alt="Banner" />
+        </div>
+
+        {/* item carousels */}
+        <div className='itemCarouselContainer'>
+            <h3 className='itemCarouselHead'>Tablets</h3>
+            <ItemCarousel6></ItemCarousel6>
         </div>
 
         {/* footer */}

@@ -266,6 +266,23 @@
   transform: scale(1.05);
 }
 
+/* middle banner 2 */
+
+.middleBanner2 {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  padding: 0 20px; 
+}
+
+.middleBanner2 img {
+  width: 100%;
+  max-width: 600px; 
+  height: auto;
+  cursor: pointer;
+}
+
 /* --------------------- footer --------------------- */
 
 .footer {
@@ -325,12 +342,25 @@
 /*--------------------- responsive ---------------------*/
 
 /* Media query for screen sizes below 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 1258px) {
 
   /* display category */
   .displayCata {
     justify-content: center;
   }
+
+ /* mid banner 2 */
+ .middleBanner2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .middleBanner2 img{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+  }
+
 }
 
 /* Media query for screen sizes below 768px */
@@ -429,4 +459,9 @@
     max-width: 150px;
   }
 
+  /* middle banner */
+
+  .middleBanner2 img {
+    max-width: 100%; /* Make sure the images scale well on very small screens */
+  }
 }
