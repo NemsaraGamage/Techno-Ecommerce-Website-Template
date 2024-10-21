@@ -138,7 +138,7 @@
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 60px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -225,6 +225,7 @@
 
 .itemCarouselDescription h4:hover {
   color: #0E4F7E;
+  cursor: pointer;
 }
 
 .itemCarouselDescription h6 {
@@ -460,8 +461,12 @@
   }
 
   /* middle banner */
+  .middleBanner2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
 
   .middleBanner2 img {
-    max-width: 100%; /* Make sure the images scale well on very small screens */
+    max-width: 100%;
   }
 }
