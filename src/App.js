@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import HomePage from './components/pages/homePage'
+import ProductPage from './components/pages/productsPage';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
 
         {/* Main Page */}
         <Route path="/HomePage" element={<HomePage></HomePage>} />
+
+        {/* Product Page */}
+        <Route path="/ProductsDisplayPage" element={<ProductPage></ProductPage>} />
 
       </Routes>
     </Router>

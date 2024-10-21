@@ -14,13 +14,13 @@ const NavBar = () => {
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/" className="nav-link">Brands</Link>
           <div className="dropdown">
-            <Link to="/DrumsPage" className="nav-link">Categories</Link>
+            <Link to="/ProductsDisplayPage" className="nav-link">Categories</Link>
             <div className="dropdown-content">
-              <Link to="/DrumsPage">Acoustic Drums</Link>
-              <Link to="/DrumsPage">Electronic Drums</Link>
-              <Link to="/DrumsPage">Drum Accessories</Link>
-              <Link to="/DrumsPage">Marching Drums</Link>
-              <Link to="/DrumsPage">Frame Drums</Link>
+              <Link to="/ProductsDisplayPage">Phones</Link>
+              <Link to="/ProductsDisplayPage">Laptops</Link>
+              <Link to="/ProductsDisplayPage">Tablets</Link>
+              <Link to="/ProductsDisplayPage">Cameras</Link>
+              <Link to="/ProductsDisplayPage">Headphones</Link>
             </div>
           </div>
           <Link to="/" className="nav-link">New Arrivals</Link>

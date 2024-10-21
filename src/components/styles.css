@@ -340,6 +340,123 @@
   color: black; 
 }
 
+/* --------------------- Product page --------------------- */
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.filter-section {
+  width: 290px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'AfacadFlux';
+}
+
+.filter-section input,
+.filter-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Poppins';
+  font-size: 12px;
+}
+
+.product-list {
+  width: 79%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-left: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  width: 245px;
+  height: 417px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'AfacadFlux';
+}
+
+.product-card p {
+  color: #777;
+  font-size: 12px;
+  margin: 10px 0;
+  flex-grow: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+}
+
+.product-card p:nth-of-type(2) {
+  font-size: 16.5px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-family: 'AfacadFlux';
+  color: black;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.addCartBtn2 {
+  background-color: #0A2351;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'AfacadFlux';
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.addCartBtn2:hover {
+  background-color: #0E4F7E;
+  transform: scale(1.05);
+}
+
 /*--------------------- responsive ---------------------*/
 
 /* Media query for screen sizes below 1200px */
@@ -360,6 +477,24 @@
     margin: 0 auto;
     width: 100%;
     max-width: 750px;
+  }
+}
+
+@media (max-width: 871px) {
+
+  /* ------------- product page ------ */
+
+  .content {
+    flex-direction: column;
+  }
+
+  .filter-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-list {
+    width: 100%;
   }
 
 }
@@ -469,4 +604,5 @@
   .middleBanner2 img {
     max-width: 100%;
   }
+
 }
