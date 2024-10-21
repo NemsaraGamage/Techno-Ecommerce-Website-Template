@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Techno-Ecommerce-Website-Template/static/css/main.55bd93af.css",
-    "main.js": "/Techno-Ecommerce-Website-Template/static/js/main.f9cf7f9e.js",
+    "main.js": "/Techno-Ecommerce-Website-Template/static/js/main.83dde4b3.js",
     "static/js/453.9e03598e.chunk.js": "/Techno-Ecommerce-Website-Template/static/js/453.9e03598e.chunk.js",
     "static/media/it7.png": "/Techno-Ecommerce-Website-Template/static/media/it7.b1bec411e618efc90036.png",
     "static/media/it5.png": "/Techno-Ecommerce-Website-Template/static/media/it5.0588f94c0080c61670c4.png",
@@ -42,7 +42,7 @@
     "static/media/it18.png": "/Techno-Ecommerce-Website-Template/static/media/it18.3f375e96c796a3abb951.png",
     "static/media/Poppins-Medium.ttf": "/Techno-Ecommerce-Website-Template/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "static/media/it33.png": "/Techno-Ecommerce-Website-Template/static/media/it33.17db02adf279be6d881b.png",
-    "static/media/midban4.jpg": "/Techno-Ecommerce-Website-Template/static/media/midban4.cbdb8390591cc982e8fe.jpg",
+    "static/media/midban4.jpg": "/Techno-Ecommerce-Website-Template/static/media/midban4.fee6df87fdf4650084b0.jpg",
     "static/media/midBan1.jpg": "/Techno-Ecommerce-Website-Template/static/media/midBan1.fbc705cc242e671ebfe1.jpg",
     "static/media/ban4.jpg": "/Techno-Ecommerce-Website-Template/static/media/ban4.cd04183ab70aeec528af.jpg",
     "static/media/ban1.jpg": "/Techno-Ecommerce-Website-Template/static/media/ban1.38878e6bbe8817923ad9.jpg",
@@ -62,11 +62,11 @@
     "static/media/logo.svg": "/Techno-Ecommerce-Website-Template/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Techno-Ecommerce-Website-Template/index.html",
     "main.55bd93af.css.map": "/Techno-Ecommerce-Website-Template/static/css/main.55bd93af.css.map",
-    "main.f9cf7f9e.js.map": "/Techno-Ecommerce-Website-Template/static/js/main.f9cf7f9e.js.map",
+    "main.83dde4b3.js.map": "/Techno-Ecommerce-Website-Template/static/js/main.83dde4b3.js.map",
     "453.9e03598e.chunk.js.map": "/Techno-Ecommerce-Website-Template/static/js/453.9e03598e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55bd93af.css",
-    "static/js/main.f9cf7f9e.js"
+    "static/js/main.83dde4b3.js"
   ]
 }
