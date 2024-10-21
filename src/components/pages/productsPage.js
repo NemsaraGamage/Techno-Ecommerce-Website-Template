@@ -6,8 +6,11 @@ import Footer from '../Footer';
 
 const ProductList = () => {
   // State for filters
-  const [searchTerm, setSearchTerm] = useState(""); // For searching by name
-  const [categoryFilter, setCategoryFilter] = useState(""); // For filtering by category
+  const [searchTerm, setSearchTerm] = useState(""); 
+  const [categoryFilter, setCategoryFilter] = useState(""); 
+  const [minPrice, setMinPrice] = useState(""); 
+  const [maxPrice, setMaxPrice] = useState("");
+  const [searchColor, setSearchColor] = useState("");
 
   // Function to handle name search input
   const handleSearchChange = (e) => {
@@ -19,7 +22,22 @@ const ProductList = () => {
     setCategoryFilter(e.target.value);
   };
 
-  // Function to filter products based on search term and category
+  // Function to handle minimum price input
+  const handleMinPriceChange = (e) => {
+    setMinPrice(e.target.value);
+  };
+
+  // Function to handle maximum price input
+  const handleMaxPriceChange = (e) => {
+    setMaxPrice(e.target.value);
+  };
+
+  // Function to search by color
+  const handleColorChange = (e) => {
+    setSearchColor(e.target.value);
+  };
+
+  // Function to filter products based on search term, category, and price
   const filteredProducts = products.filter((product) => {
     // Apply search filter
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -29,52 +47,84 @@ const ProductList = () => {
       ? product.category === categoryFilter
       : true;
 
-    return matchesSearch && matchesCategory;
+    // Apply price filter if set
+    const matchesPrice = (!minPrice || product.price >= parseFloat(minPrice)) && (!maxPrice || product.price <= parseFloat(maxPrice));
+
+    const colorSearch = product.color.toLowerCase().includes(searchColor.toLowerCase());
+
+    return matchesSearch && matchesCategory && matchesPrice && colorSearch;
   });
 
   return (
     <>
-    {/* navigation bar */}
-    <NavBarHead />
+      {/* navigation bar */}
+      <NavBarHead />
 
-    <div className="product-page">
+      <div className="product-page">
+        <div className="content">
+          <aside className="filter-section">
+            <h2>Filter Products</h2>
+            {/* Filter input: Search by name */}
+            <input
+              type="text"
+              placeholder="Search by name"
+              value={searchTerm}
+              onChange={handleSearchChange}
+            />
 
-      <div className="content">
-        <aside className="filter-section">
-          <h2>Filter Products</h2>
-          {/* Filter input: Search by name */}
-          <input
-            type="text"
-            placeholder="Search by name"
-            value={searchTerm}
-            onChange={handleSearchChange}
-          />
+            {/* Filter input: Filter by category */}
+            <select value={categoryFilter} onChange={handleCategoryChange}>
+              <option value="">All Categories</option>
+              <option value="phones">Phones</option>
+              <option value="camera">Camera</option>
+              <option value="laptop">Laptop</option>
+            </select>
 
-          {/* Filter input: Filter by category */}
-          <select value={categoryFilter} onChange={handleCategoryChange}>
-            <option value="">All Categories</option>
-            <option value="phones">Phones</option>
-            <option value="camera">Camera</option>
-            <option value="laptop">Laptop</option>
-          </select>
-        </aside>
-
-        <section className="product-list">
-          {filteredProducts.map((product) => (
-            <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>{product.des}</p>
-              <p>${product.price}</p>
-              <button className='addCartBtn2'>Add to Cart</button>
+            {/* Filter input: Filter by price */}
+            <div className="price-filter">
+              <h4>Price</h4>
+              <input
+                type="number"
+                placeholder="Min Price"
+                value={minPrice}
+                onChange={handleMinPriceChange}
+              />
+              <input
+                type="number"
+                placeholder="Max Price"
+                value={maxPrice}
+                onChange={handleMaxPriceChange}
+              />
             </div>
-          ))}
-        </section>
-      </div>
-    </div>
 
-    {/* footer */}
-    <Footer />
+            {/* Filter input: by color */}
+            <div className="color-filter">
+              <h4>Color</h4>
+              <input
+                type="text"
+                placeholder="Enter color"
+                value={searchColor}
+                onChange={handleColorChange}
+              />
+            </div>
+          </aside>
+
+          <section className="product-list">
+            {filteredProducts.map((product) => (
+              <div key={product.id} className="product-card">
+                <img src={product.image} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>{product.des}</p>
+                <p>${product.price}</p>
+                <button className='addCartBtn2'>Add to Cart</button>
+              </div>
+            ))}
+          </section>
+        </div>
+      </div>
+
+      {/* footer */}
+      <Footer />
     </>
   );
 };

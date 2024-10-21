@@ -381,6 +381,12 @@
   font-size: 12px;
 }
 
+.price-filter h4, .color-filter h4{
+  font-family: 'AfacadFlux';
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
 .product-list {
   width: 79%;
   display: grid;
@@ -495,6 +501,7 @@
 
   .product-list {
     width: 100%;
+    margin-left: 0;
   }
 
 }
