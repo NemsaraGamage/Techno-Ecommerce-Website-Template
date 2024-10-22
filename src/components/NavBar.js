@@ -16,8 +16,8 @@ const NavBar = () => {
           <div className="dropdown">
             <Link to="/ProductsDisplayPage" className="nav-link">Categories</Link>
             <div className="dropdown-content">
-              <Link to="/ProductsDisplayPage">Phones</Link>
-              <Link to="/ProductsDisplayPage">Laptops</Link>
+              <Link to="/PhoneProductPage">Phones</Link>
+              <Link to="/LaptopProductPage">Laptops</Link>
               <Link to="/ProductsDisplayPage">Tablets</Link>
               <Link to="/ProductsDisplayPage">Cameras</Link>
               <Link to="/ProductsDisplayPage">Headphones</Link>

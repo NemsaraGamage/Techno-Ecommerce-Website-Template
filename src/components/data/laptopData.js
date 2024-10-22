@@ -1,0 +1,101 @@
+// productsData.js
+import p1 from '../pics/product/laptop/p1.png'
+import p2 from '../pics/product/laptop/p2.png'
+import p3 from '../pics/product/laptop/p3.png'
+import p4 from '../pics/product/laptop/p4.png'
+import p5 from '../pics/product/laptop/p5.png'
+import p6 from '../pics/product/laptop/p6.png'
+import p7 from '../pics/product/laptop/p7.png'
+import p8 from '../pics/product/laptop/p8.png'
+import p9 from '../pics/product/laptop/p9.png'
+import p10 from '../pics/product/laptop/p10.png'
+import p11 from '../pics/product/laptop/p11.png'
+import p12 from '../pics/product/laptop/p12.png'
+
+export const products = [
+    { id: 1,  
+        color: 'gray',
+        name: 'MSI',
+        des: 'MSI VECTOR 17 HX A14VHG Gaming Laptop, Intel Core i...',
+        price: 1485,
+        image: p1, 
+    },
+    { id: 2,  
+        color: 'black',
+        name: 'Microsoft',
+        des: 'Microsoft Surface Pro Portables Laptop, Snapdragon X...',
+        price: 754.99,
+        image: p2,
+    },
+    { id: 3,  
+        color: 'grey',
+        name: 'Apple',
+        des: 'Apple MacBook Chip Laptop, M3 Pro Processor, 16GB RAM,...',
+        price: 800,
+        image: p3, 
+    },
+    { id: 4,  
+        color: 'grey',
+        name: 'HP',
+        des: 'HP OmniBook X Laptop, Snapdragon X Elite, 16GB RAM, 1...',
+        price: 450,
+        image: p4
+    },
+    { id: 5,  
+        color: 'black',
+        name: 'Asus',
+        des: 'Asus ROG Strix SCAR 18 Gaming Laptop, Intel Core i9, 6...',
+        price: 1799,
+        image: p5
+    },
+    { id: 6,
+        color: 'blue',  
+        name: 'Huawei',
+        des: 'Huawei MateBook X Pro 2022, Intel Core i7 12th Gen, 16...',
+        price: 1999,
+        image: p6,
+    },
+    { id: 7,
+        color: 'grey',  
+        name: 'ACER',
+        des: 'ACER Aspire 5 Spin 2 in 1 Convertible Laptop, Intel Co...',
+        price: 145,
+        image: p7,
+    },
+    { id: 8,
+        color: 'grey',  
+        name: 'Asus',
+        des: 'ASUS Zenbook Duo OLED Laptop, Intel Core Ultra 7 155H,...',
+        price: 624,
+        image: p8,
+    },
+    { id: 9,
+        color: 'black',  
+        name: 'MSI',
+        des: 'MSI RAIDER 18 HX A14VIG Gaming Laptop, Intel Core i9,...',
+        price: 1540,
+        image: p9,
+    },
+    { id: 10,
+        color: 'black',  
+        name: 'Apple',
+        des: 'Apple MacBook Pro M3 Max chip Laptop, 48GB RAM, 1TB...',
+        price: 200,
+        image: p10,
+    },
+    { id: 11,
+        color: 'black',  
+        name: 'Asus',
+        des: 'Asus Zenbook Pro 14 Duo Laptop, Intel Core i9-13900...',
+        price: 1955.99,
+        image: p11,
+    },
+    { id: 12,
+        color: 'blue',  
+        name: 'Microsoft',
+        des: 'Microsoft Surface Pro Portables Laptop, Snapdragon X...',
+        price: 314,
+        image: p12,
+    },
+  ];
+  

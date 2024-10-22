@@ -343,6 +343,11 @@
 
 /* --------------------- Product page --------------------- */
 
+.productHeader{
+  font-family: 'Poppins';
+  margin-top: 30px;
+}
+
 .product-page {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,101 @@
+// productsData.js
+import it1 from '../pics/items/it1.jpg'
+import it6 from '../pics/items/it6.png'
+import it7 from '../pics/items/it7.png'
+import it9 from '../pics/items/it9.png'
+import it10 from '../pics/items/it10.png'
+import it8 from '../pics/items/it8.png'
+import it41 from '../pics/items/it41.png'
+import it42 from '../pics/items/it42.png'
+import it43 from '../pics/items/it43.png'
+import it44 from '../pics/items/it44.png'
+import it45 from '../pics/items/it45.png'
+import it46 from '../pics/items/it46.png'
+
+export const products = [
+    { id: 1,  
+        color: 'black',
+        name: 'Apple',
+        des: 'iPhone 12 128GB 6.1-inch 5G Phone – Black',
+        price: 400.99,
+        image: it1, 
+    },
+    { id: 2,  
+        color: 'black',
+        name: 'Samsung',
+        des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-S926BZKCMEA – Titanium Black',
+        price: 850,
+        image: it6,
+    },
+    { id: 3,  
+        color: 'grey',
+        name: 'Samsung',
+        des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB,...',
+        price: 800,
+        image: it7, 
+    },
+    { id: 4,  
+        color: 'black',
+        name: 'Apple',
+        des: 'Apple iPhone 16 Pro 6.3-inch 256GB Black Titanium',
+        price: 1450,
+        image: it8
+    },
+    { id: 5,  
+        color: 'graphite',
+        name: 'Samsung',
+        des: 'Samsung Galaxy Z Flip 4 5G 256GB Phone - Graphite',
+        price: 799,
+        image: it10
+    },
+    { id: 6,
+        color: 'pink',  
+        name: 'Apple',
+        des: 'Apple iPhone 16 Plus 6.7-inch 256GB Pink',
+        price: 1999,
+        image: it9,
+    },
+    { id: 7,
+        color: 'black',  
+        name: 'NOTHING',
+        des: 'Nothing Phone 1, 6.55-inch, 128GB, 8GB RAM, 5G Phone - Black',
+        price: 245,
+        image: it41,
+    },
+    { id: 8,
+        color: 'black',  
+        name: 'Huawei',
+        des: 'Huawei Mate X3, 7.85-inch, 512GB, 12GB RAM, phone - Black',
+        price: 2000,
+        image: it42,
+    },
+    { id: 9,
+        color: 'orange',  
+        name: 'OPPO',
+        des: 'Oppo A77s 128GB Phone - Sunset Orange',
+        price: 40,
+        image: it43,
+    },
+    { id: 10,
+        color: 'Silver',  
+        name: 'XIAOMI',
+        des: 'Xiaomi 12T 256GB Phone - Silver',
+        price: 200,
+        image: it44,
+    },
+    { id: 11,
+        color: 'green',  
+        name: 'MOTOROLA',
+        des: 'Motorola Edge 40 5G, 256GB Phone - Nebula Green',
+        price: 55.99,
+        image: it45,
+    },
+    { id: 12,
+        color: 'green',  
+        name: 'MOTOROLA',
+        des: 'Motorola Razr 40 Phone, 6.9-inch, 256GB, 8GB RAM, 5G – Green',
+        price: 114,
+        image: it46,
+    },
+  ];
+  

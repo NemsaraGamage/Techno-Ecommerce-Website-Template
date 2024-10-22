@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { products } from "../data/productData"; 
+import { products } from "../data/laptopData"; 
 import '../styles.css';
 import NavBarHead from '../NavBar';
 import Footer from '../Footer';
@@ -7,7 +7,6 @@ import Footer from '../Footer';
 const ProductList = () => {
   // State for filters
   const [searchTerm, setSearchTerm] = useState(""); 
-  const [categoryFilter, setCategoryFilter] = useState(""); 
   const [minPrice, setMinPrice] = useState(""); 
   const [maxPrice, setMaxPrice] = useState("");
   const [searchColor, setSearchColor] = useState("");
@@ -16,11 +15,6 @@ const ProductList = () => {
   // Function to handle name search input
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
-  };
-
-  // Function to handle category filter change
-  const handleCategoryChange = (e) => {
-    setCategoryFilter(e.target.value);
   };
 
   // Function to handle minimum price input
@@ -48,11 +42,6 @@ const ProductList = () => {
     // Apply search filter
     const matchesSearch = product.des.toLowerCase().includes(searchTerm.toLowerCase());
 
-    // Apply category filter 
-    const matchesCategory = categoryFilter
-      ? product.category === categoryFilter
-      : true;
-
     // Apply price filter 
     const matchesPrice = (!minPrice || product.price >= parseFloat(minPrice)) && (!maxPrice || product.price <= parseFloat(maxPrice));
 
@@ -64,7 +53,7 @@ const ProductList = () => {
       ? product.name === brandFilter
       : true;
 
-    return matchesSearch && matchesCategory && matchesPrice && colorSearch && matchesBrand;
+    return matchesSearch && matchesPrice && colorSearch && matchesBrand;
   });
 
   return (
@@ -72,7 +61,7 @@ const ProductList = () => {
       {/* navigation bar */}
       <NavBarHead />
 
-      <h1 className="productHeader" >All Products</h1>
+      <h1 className="productHeader" >All Laptop's</h1>
 
       <div className="product-page">
         <div className="content">
@@ -86,26 +75,17 @@ const ProductList = () => {
               onChange={handleSearchChange}
             />
 
-            {/* Filter input: Filter by category */}
-            <h4 className="filter-head">Categories</h4>
-            <select value={categoryFilter} onChange={handleCategoryChange}>
-              <option value="">All Categories</option>
-              <option value="phones">Phones</option>
-              <option value="camera">Camera</option>
-              <option value="laptop">Laptop</option>
-              <option value="tablet">Tablet</option>
-            </select>
-
             {/* Filter input: Filter by brand */}
             <h4 className="filter-head">Brands</h4>
             <select value={brandFilter} onChange={handleBrandChange}>
               <option value="">All Brand</option>
               <option value="Samsung">Samsung</option>
               <option value="Apple">Apple</option>
-              <option value="Canon">Canon</option>
-              <option value="Acer">Acer</option>
-              <option value="LENOVO">LENOVO</option>
-              <option value="XIAOMI">XIAOMI</option>
+              <option value="OPPO">MSI</option>
+              <option value="Huawei">Microsoft</option>
+              <option value="XIAOMI">Huawei</option>
+              <option value="MOTOROLA">ACER</option>
+              <option value="Asus">Asus</option>
             </select>
 
             {/* Filter input: Filter by price */}
