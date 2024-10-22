@@ -83,6 +83,7 @@
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-family: 'AfacadFlux';
 }
 
 .dropdown-content a:hover {
@@ -376,12 +377,11 @@
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 4px;
   font-family: 'Poppins';
-  font-size: 12px;
+  font-size: 13px;
 }
 
-.price-filter h4, .color-filter h4{
+.price-filter h4, .color-filter h4, .filter-head{
   font-family: 'AfacadFlux';
   font-size: 17px;
   margin-bottom: 5px;

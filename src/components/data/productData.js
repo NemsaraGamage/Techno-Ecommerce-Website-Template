@@ -9,6 +9,9 @@ import it13 from '../pics/items/it13.png'
 import it30 from '../pics/items/it30.png'
 import it26 from '../pics/items/it26.png'
 import it36 from '../pics/items/it36.png'
+import it33 from '../pics/items/it33.png'
+import it31 from '../pics/items/it31.png'
+import it12 from '../pics/items/it12.png'
 
 export const products = [
     { id: 1,  
@@ -90,6 +93,30 @@ export const products = [
         price: 120,
         image: it36,
         category: "monitor" 
+    },
+    { id: 11, 
+        color: 'black', 
+        name: 'Nikon',
+        des: 'Nikon Z30 4K Mirrorless Digital Camera Kit, with16-50mm Lens...',
+        price: 410,
+        image: it33,
+        category: "camera" 
+    },
+    { id: 12, 
+        color: 'black', 
+        name: 'Canon',
+        des: 'Canon EOS R100 Mirrorless Camera + RF-S 18-45mm Le...',
+        price: 120,
+        image: it31,
+        category: "camera" 
+    },
+    { id: 13, 
+        color: 'blue', 
+        name: 'LENOVO',
+        des: 'Lenovo Yogabook 9i Intel Core i7 13th Gen, 16GB RAM, 1TB SSD,...',
+        price: 1450,
+        image: it12,
+        category: "laptop" 
     },
   ];
   

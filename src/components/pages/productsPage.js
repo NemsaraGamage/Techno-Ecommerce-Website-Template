@@ -11,6 +11,7 @@ const ProductList = () => {
   const [minPrice, setMinPrice] = useState(""); 
   const [maxPrice, setMaxPrice] = useState("");
   const [searchColor, setSearchColor] = useState("");
+  const [brandFilter, setbrandFilter] = useState("");
 
   // Function to handle name search input
   const handleSearchChange = (e) => {
@@ -37,22 +38,33 @@ const ProductList = () => {
     setSearchColor(e.target.value);
   };
 
+  // Function to filter color
+  const handleBrandChange = (e) => {
+    setbrandFilter(e.target.value);
+  };
+
   // Function to filter products based on search term, category, and price
   const filteredProducts = products.filter((product) => {
     // Apply search filter
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
 
-    // Apply category filter if selected
+    // Apply category filter 
     const matchesCategory = categoryFilter
       ? product.category === categoryFilter
       : true;
 
-    // Apply price filter if set
+    // Apply price filter 
     const matchesPrice = (!minPrice || product.price >= parseFloat(minPrice)) && (!maxPrice || product.price <= parseFloat(maxPrice));
 
+    // Apply color filter
     const colorSearch = product.color.toLowerCase().includes(searchColor.toLowerCase());
 
-    return matchesSearch && matchesCategory && matchesPrice && colorSearch;
+    // Apply category filter 
+    const matchesBrand = brandFilter
+      ? product.name === brandFilter
+      : true;
+
+    return matchesSearch && matchesCategory && matchesPrice && colorSearch && matchesBrand;
   });
 
   return (
@@ -73,11 +85,25 @@ const ProductList = () => {
             />
 
             {/* Filter input: Filter by category */}
+            <h4 className="filter-head">Categories</h4>
             <select value={categoryFilter} onChange={handleCategoryChange}>
               <option value="">All Categories</option>
               <option value="phones">Phones</option>
               <option value="camera">Camera</option>
               <option value="laptop">Laptop</option>
+              <option value="tablet">Tablet</option>
+            </select>
+
+            {/* Filter input: Filter by brand */}
+            <h4 className="filter-head">Brands</h4>
+            <select value={brandFilter} onChange={handleBrandChange}>
+              <option value="">All Brand</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Apple">Apple</option>
+              <option value="Canon">Canon</option>
+              <option value="Acer">Acer</option>
+              <option value="LENOVO">LENOVO</option>
+              <option value="XIAOMI">XIAOMI</option>
             </select>
 
             {/* Filter input: Filter by price */}
