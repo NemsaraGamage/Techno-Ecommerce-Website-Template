@@ -17,14 +17,15 @@
 
 /* --------------------- NavBar --------------------- */
 
+/* Base Navbar Container */
 .navbarCon {
   width: 100%;
-  background-color: #0A2351; 
+  background-color: #0A2351;
   display: flex;
   justify-content: center;
 }
 
-/* Navbar container */
+/* Navbar Container */
 .navbar {
   width: 100%;
   max-width: 1200px;
@@ -43,15 +44,19 @@
   font-family: 'AfacadFlux';
 }
 
-/* Navbar links container */
-.nav-links {
+/* Desktop Navigation */
+.desktop-nav {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
-/* Individual navbar links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
 .nav-link {
-  margin: 0 15px;
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -61,12 +66,12 @@
 }
 
 .nav-link:hover {
-  color: #0E4F7E; 
+  color: #0E4F7E;
 }
 
+/* Dropdown Styling */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -94,7 +99,7 @@
   display: block;
 }
 
-/* Search bar styling */
+/* Search bar */
 .search-bar {
   display: flex;
   align-items: center;
@@ -108,14 +113,33 @@
   outline: none;
   padding: 2px;
   font-size: 14px;
-  width: 180px;
+  width: 210px;
 }
 
-.search-bar i {
-  margin-left: 5px;
-  color: #888;
-  font-size: 16px;
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-nav .nav-link {
+  color: #0A2351;
+  font-size: 20px;
+  text-decoration: none;
   font-family: 'AfacadFlux';
+}
+
+.close-menu-btn {
+  align-self: flex-end;
+  color: black;
 }
 
 /*--------------------- carousel ---------------------*/
@@ -511,42 +535,19 @@
 
 }
 
+@media (max-width: 781px) {
+  /* nav bar */
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
 /* Media query for screen sizes below 768px */
 @media (max-width: 768px) {
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo {
-    margin: 0 auto;
-    margin-top: 5px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .nav-link {
-    margin: 10px 0;
-  }
-
-  .dropdown-content {
-    position: relative;
-    width: 100%;
-  }
-
-  .search-bar {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .search-bar input {
-    width: 100%;
-  }
 
   /* display category */
   .displayCata {
