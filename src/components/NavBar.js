@@ -43,7 +43,7 @@ const NavBar = () => {
                   <Link to="/ProductsDisplayPage">Headphones</Link>
                 </div>
               </div>
-              <Link to="/" className="nav-link">New Arrivals</Link>
+              <Link to="/NewArrivalPage" className="nav-link">New Arrivals</Link>
             </div>
             <div className="search-bar">
               <input type="text" placeholder="Search..." />
@@ -81,7 +81,7 @@ const NavBar = () => {
               <Link to="/ProductsDisplayPage" onClick={handleDrawerToggle}>Headphones</Link>
             </div>
           </div>
-          <Link to="/" className="nav-link" onClick={handleDrawerToggle}>New Arrivals</Link>
+          <Link to="/NewArrivalPage" className="nav-link" onClick={handleDrawerToggle}>New Arrivals</Link>
         </div>
       </Drawer>
     </>

@@ -6,6 +6,7 @@ import HomePage from './components/pages/homePage'
 import ProductPage from './components/pages/productsPage';
 import PhoneProductPage from './components/pages/phoneProductsPage';
 import LaptopProductPage from './components/pages/laptopProductsPage';
+import NewArrivalPage from './components/pages/newArrivalPage';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
 
         {/* Laptop Product Page */}
         <Route path="/LaptopProductPage" element={<LaptopProductPage></LaptopProductPage>} />
+
+        {/* New Arrival Page */}
+        <Route path="/NewArrivalPage" element={<NewArrivalPage></NewArrivalPage>} />
 
       </Routes>
     </Router>

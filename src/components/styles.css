@@ -176,7 +176,7 @@
 
 /* middle banner */
 
-.midBannerCat {
+.midBannerCat, .newArrivalBan {
   position: relative;
   width: 100%;
   max-width: 1500px;
@@ -184,7 +184,11 @@
   margin-top: 79px;
 }
 
-.midBannerCat img {
+.newArrivalBan{
+  margin-top: 40px;
+}
+
+.midBannerCat img, .newArrivalBan img {
   max-width: 80%;
   width: 100%;
   height: auto;
