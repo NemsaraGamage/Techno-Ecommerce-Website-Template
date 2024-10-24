@@ -498,36 +498,43 @@
 
 /* --------------------- Account PopUp --------------------- */
 
+/* Popup Container Styling */
 .custom-popup .popup-content {
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.95); /* Light background with slight transparency */
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
   max-width: 400px;
   width: 100%;
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
+  z-index: 1000; /* Ensure the popup is above other content */
+}
+
+/* Adjust Overlay Background */
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the overlay to make the popup content stand out */
 }
 
 /* Popup Header Styling */
-.custom-popup h1 {
+.custom-popup .popup-title {
   margin-top: 0;
   font-size: 1.8rem;
-  color: #333;
+  color: #000;
   text-align: center;
 }
 
 /* Popup Content Styling */
-.custom-popup p {
+.custom-popup .popup-text {
   font-size: 1rem;
-  color: #555;
+  color: #333;
   margin-bottom: 20px;
   line-height: 1.5;
   text-align: center;
 }
 
 /* Close Button Styling */
-.custom-popup button {
+.custom-popup .popup-close-btn {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
@@ -541,7 +548,7 @@
 }
 
 /* Close Button Hover Effect */
-.custom-popup button:hover {
+.custom-popup .popup-close-btn:hover {
   background-color: #0056b3;
 }
 
@@ -556,6 +563,7 @@
     transform: scale(1);
   }
 }
+
 
 /* Background Overlay Styling */
 .custom-popup .popup-overlay {
