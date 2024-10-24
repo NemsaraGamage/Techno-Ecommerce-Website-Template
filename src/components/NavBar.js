@@ -7,12 +7,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton, Drawer } from '@mui/material';
 
+import AccountPopup from './accountPopUp';
+
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
 
   return (
     <>
@@ -50,13 +56,19 @@ const NavBar = () => {
               <i className="fas fa-search"></i>
             </div>
             <div className='nav-icons'>
-              <AccountCircleIcon style={{ color: 'white', fontSize: '30px', marginRight: '15px' }} />
+              <AccountCircleIcon
+                style={{ color: 'white', fontSize: '30px', marginRight: '15px', cursor: 'pointer' }}
+                onClick={openPopup} // Open the popup when clicked
+              />
               <ShoppingCartIcon style={{ color: 'white', fontSize: '29px' }} />
             </div>
           </div>
           
         </div>
       </div>
+
+      {/* Account Popup */}
+      <AccountPopup isOpen={isPopupOpen} closePopup={closePopup} />
 
       {/* Mobile Drawer */}
       <Drawer

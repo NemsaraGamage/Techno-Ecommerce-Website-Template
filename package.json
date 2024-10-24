@@ -12,7 +12,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "antd": "^5.21.4",
+    "antd": "^5.21.5",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.11.9",
     "primeicons": "^7.0.0",
@@ -22,6 +22,7 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.6",
     "routers": "^0.1.4",
     "web-vitals": "^2.1.4"
   },
