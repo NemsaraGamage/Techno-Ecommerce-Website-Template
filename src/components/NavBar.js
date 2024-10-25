@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton, Drawer } from '@mui/material';
 
-import AccountPopup from './pop-ups/accountPopUp';
+import AccountPopup from './pop-ups/loginPopUp';
 
 const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import TextField from '@mui/material/TextField';
-import { color } from 'framer-motion';
+import SignUpPopUp from './signUpPopUp';
 
 // Inline style with "Poppins" font family
 const fontFamilyStyle = {
@@ -9,7 +9,17 @@ const fontFamilyStyle = {
 };
 
 function AccountPopup({ isOpen, closePopup }) {
-  // Inline styles
+  // State to manage SignUpPopUp visibility
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  const handleOpenSignUp = () => {
+    setShowSignUp(true);
+  };
+
+  const handleCloseSignUp = () => {
+    setShowSignUp(false);
+  };
+
   const popupContainerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -35,7 +45,7 @@ function AccountPopup({ isOpen, closePopup }) {
     fontSize: '1.8rem',
     color: '#333',
     textAlign: 'center',
-    marginBottom : '15px',
+    marginBottom: '15px',
   };
 
   const popupTextStyle = {
@@ -57,12 +67,12 @@ function AccountPopup({ isOpen, closePopup }) {
     marginTop: '5px',
     color: 'blue',
     cursor: 'pointer',
-    textDecoration: 'underline'
-  }
+    textDecoration: 'underline',
+  };
 
   const textInput = {
-    marginTop: '10px'
-  }
+    marginTop: '10px',
+  };
 
   const popupCloseButtonStyle = {
     ...fontFamilyStyle,
@@ -75,7 +85,7 @@ function AccountPopup({ isOpen, closePopup }) {
     fontSize: '0.8rem',
     cursor: 'pointer',
     transition: 'background-color 0.3s',
-    marginTop: '30px'
+    marginTop: '30px',
   };
 
   const overlayStyle = {
@@ -84,38 +94,47 @@ function AccountPopup({ isOpen, closePopup }) {
 
   return (
     <div style={popupContainerStyle}>
-        <Popup
-          open={isOpen}
-          onClose={closePopup}
-          modal
-          closeOnDocumentClick
-          position="top center"
-          overlayStyle={overlayStyle} 
-        >
+      <Popup
+        open={isOpen}
+        onClose={closePopup}
+        modal
+        closeOnDocumentClick
+        position="top center"
+        overlayStyle={overlayStyle}
+      >
         <div style={popupContentStyle}>
           <h1 style={popupTitleStyle}>Log in or register</h1>
           <TextField 
             style={textInput}
-            label="user name/email" 
+            label="User name/email" 
             fullWidth 
           />
           <TextField 
             style={textInput}
-            label="password" 
+            label="Password" 
             fullWidth 
+            type="password"
           />
           <button
             style={popupCloseButtonStyle}
             onClick={closePopup}
             onMouseOver={(e) => (e.target.style.backgroundColor = '#0056b3')}
-            onMouseOut={(e) => (e.target.style.backgroundColor = '#007bff')}
+            onMouseOut={(e) => (e.target.style.backgroundColor = '#0A2351')}
           >
-            Log in 
+            Log in
           </button>
           <p style={popupTextStyle}>Don't have an account?</p>
-          <p style={popupText2Style}>Create an account</p>
+          {/* Use onClick to open SignUpPopUp */}
+          <p style={popupText2Style} onClick={handleOpenSignUp}>
+            Create an account
+          </p>
         </div>
       </Popup>
+
+      {/* Render SignUpPopUp conditionally */}
+      {showSignUp && (
+        <SignUpPopUp isOpen={showSignUp} closePopup={handleCloseSignUp} />
+      )}
     </div>
   );
 }
