@@ -1,0 +1,101 @@
+// productsData.js
+import p1 from '../pics/product/tablets/p1.png'
+import p2 from '../pics/product/tablets/p2.png'
+import p3 from '../pics/product/tablets/p3.png'
+import p4 from '../pics/product/tablets/p4.png'
+import p5 from '../pics/product/tablets/p5.png'
+import p6 from '../pics/product/tablets/p6.png'
+import p7 from '../pics/product/tablets/p7.png'
+import p8 from '../pics/product/tablets/p8.png'
+import p9 from '../pics/product/tablets/p9.png'
+import p10 from '../pics/product/tablets/p10.png'
+import p11 from '../pics/product/tablets/p11.png'
+import p12 from '../pics/product/tablets/p12.png'
+
+export const products = [
+    { id: 1,  
+        color: 'grey',
+        name: 'Apple',
+        des: 'Apple iPad Pro 2022 M2 512GB 12.9-inch Cellular - Grey',
+        price: 485,
+        image: p1, 
+    },
+    { id: 2,  
+        color: 'blue',
+        name: 'Samsung',
+        des: 'Samsung Galaxy Tab S9 FE+, 12.4-inch, 12GB RAM, 256GB,...',
+        price: 154.99,
+        image: p2,
+    },
+    { id: 3,  
+        color: 'grey',
+        name: 'Samsung',
+        des: 'Samsung Galaxy TAB S9 Ultra 256GB 12GB RAM 5G 14.6-inc...',
+        price: 339.99,
+        image: p3, 
+    },
+    { id: 4,  
+        color: 'Silver',
+        name: 'Apple',
+        des: 'Apple iPad Pro 2024, M4 Chip, 256GB, 8GB RAM, 13-inch, Wi-...',
+        price: 389.99,
+        image: p4
+    },
+    { id: 5,  
+        color: 'grey',
+        name: 'Apple',
+        des: 'Apple iPad Mini 2021 WiFi 64GB - Grey',
+        price: 124,
+        image: p5
+    },
+    { id: 6,
+        color: 'grey',  
+        name: 'Lenovo',
+        des: 'Lenovo Tab M10 Tablet, 4GB RAM, 64GB, 10.1-Inch, Wi-Fi, ZAAE0125...',
+        price: 40,
+        image: p6,
+    },
+    { id: 7,
+        color: 'grey',  
+        name: 'Lenovo',
+        des: 'Lenovo Tab K11 4G LTE Tablet,8GB RAM, 128GB, 11-inch, ZAEC0012AE...',
+        price: 84.99,
+        image: p7,
+    },
+    { id: 8,
+        color: 'grey',  
+        name: 'Apple',
+        des: 'Apple iPad Air M2 128GB 8GB RAM WIFI 11-inch Tablet - Space Grey',
+        price: 160,
+        image: p8,
+    },
+    { id: 9,
+        color: 'white',  
+        name: 'HUAWEI',
+        des: 'HUAWEI MatePad S 11.5-inch 256GB 8GB RAM Paper-Mat...',
+        price: 154,
+        image: p9,
+    },
+    { id: 10,
+        color: 'grey',  
+        name: 'HUAWEI',
+        des: 'HUAWEI MatePad SE 11-inch , 6GB RAM, 128GB - Nebula Grey',
+        price: 40.99,
+        image: p10,
+    },
+    { id: 11,
+        color: 'blue',  
+        name: 'NOKIA',
+        des: 'NOKIA T20 Tablet, 10.4-inch, 3GB RAM, 32GB, Wi-Fi, NOKIA T20...',
+        price: 30,
+        image: p11,
+    },
+    { id: 12,
+        color: 'blue',  
+        name: 'XIAOMI',
+        des: 'XIAOMI Redmi PAD-SE Tablet, 11-inch, 8GB RAM, 256GB, Wi-Fi...',
+        price: 54,
+        image: p12,
+    },
+  ];
+  

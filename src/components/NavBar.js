@@ -44,7 +44,7 @@ const NavBar = () => {
                 <div className="dropdown-content">
                   <Link to="/PhoneProductPage">Phones</Link>
                   <Link to="/LaptopProductPage">Laptops</Link>
-                  <Link to="/ProductsDisplayPage">Tablets</Link>
+                  <Link to="/TabletProductPage">Tablets</Link>
                   <Link to="/ProductsDisplayPage">Cameras</Link>
                   <Link to="/ProductsDisplayPage">Headphones</Link>
                 </div>
