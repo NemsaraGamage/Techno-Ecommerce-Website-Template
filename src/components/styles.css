@@ -17,7 +17,6 @@
 
 /* --------------------- NavBar --------------------- */
 
-/* Base Navbar Container */
 .navbarCon {
   width: 100%;
   background-color: #0A2351;
@@ -25,7 +24,6 @@
   justify-content: center;
 }
 
-/* Navbar Container */
 .navbar {
   width: 100%;
   max-width: 1200px;
@@ -35,7 +33,6 @@
   padding: 10px 20px;
 }
 
-/* Logo styling */
 .logo {
   font-size: 26px;
   font-weight: bold;
@@ -44,7 +41,6 @@
   font-family: 'AfacadFlux';
 }
 
-/* Desktop Navigation */
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -69,7 +65,6 @@
   color: #0E4F7E;
 }
 
-/* Dropdown Styling */
 .dropdown {
   position: relative;
 }
@@ -116,12 +111,10 @@
   width: 210px;
 }
 
-/* Mobile Menu Icon */
 .mobile-menu-icon {
   display: none;
 }
 
-/* Mobile Navigation */
 .mobile-nav {
   width: 250px;
   padding: 20px;
@@ -196,7 +189,7 @@
 }
 
 .midBannerCat:hover img {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05); 
 }
 
 .bannerOverlay {
@@ -282,7 +275,7 @@
   background-color: #0A2351;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 17px;
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
@@ -494,80 +487,6 @@
 .addCartBtn2:hover {
   background-color: #0E4F7E;
   transform: scale(1.05);
-}
-
-/* --------------------- Account PopUp --------------------- */
-
-/* Popup Container Styling */
-.custom-popup .popup-content {
-  background-color: rgba(255, 255, 255, 0.95); /* Light background with slight transparency */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  width: 100%;
-  position: relative;
-  animation: fadeIn 0.3s ease-in-out;
-  z-index: 1000; /* Ensure the popup is above other content */
-}
-
-/* Adjust Overlay Background */
-.popup-overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Darken the overlay to make the popup content stand out */
-}
-
-/* Popup Header Styling */
-.custom-popup .popup-title {
-  margin-top: 0;
-  font-size: 1.8rem;
-  color: #000;
-  text-align: center;
-}
-
-/* Popup Content Styling */
-.custom-popup .popup-text {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-/* Close Button Styling */
-.custom-popup .popup-close-btn {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* Close Button Hover Effect */
-.custom-popup .popup-close-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Popup Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-
-/* Background Overlay Styling */
-.custom-popup .popup-overlay {
-  background: rgba(0, 0, 0, 0.6);
 }
 
 /*--------------------- responsive ---------------------*/

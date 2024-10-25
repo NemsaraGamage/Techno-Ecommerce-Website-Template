@@ -38,7 +38,7 @@ const NavBar = () => {
           <div className="desktop-nav">
             <div className="nav-links">
               <Link to="/" className="nav-link">Home</Link>
-              <Link to="/" className="nav-link">Brands</Link>
+              <Link to="/" className="nav-link">Services</Link>
               <div className="dropdown">
                 <Link to="/ProductsDisplayPage" className="nav-link">Categories</Link>
                 <div className="dropdown-content">
@@ -55,13 +55,13 @@ const NavBar = () => {
               <input type="text" placeholder="Search..." />
               <i className="fas fa-search"></i>
             </div>
-            <div className='nav-icons'>
-              <AccountCircleIcon
-                style={{ color: 'white', fontSize: '30px', marginRight: '15px', cursor: 'pointer' }}
-                onClick={openPopup} // Open the popup when clicked
-              />
-              <ShoppingCartIcon style={{ color: 'white', fontSize: '29px' }} />
-            </div>
+          </div>
+
+          <div className='nav-icons'>
+            <AccountCircleIcon
+              style={{ color: 'white', fontSize: '30px', cursor: 'pointer' }} onClick={openPopup} 
+            />
+            <ShoppingCartIcon style={{ color: 'white', marginLeft: '25px', fontSize: '29px' }} />
           </div>
           
         </div>
@@ -81,6 +81,7 @@ const NavBar = () => {
           <IconButton onClick={handleDrawerToggle} className="close-menu-btn">
             <CloseIcon />
           </IconButton>
+          
           <Link to="/" className="nav-link" onClick={handleDrawerToggle}>Home</Link>
           <Link to="/" className="nav-link" onClick={handleDrawerToggle}>Brands</Link>
           <div className="dropdown">
