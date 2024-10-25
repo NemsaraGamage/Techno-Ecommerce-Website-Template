@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it26 from './pics/items/it26.png'
-import it27 from './pics/items/it27.png'
-import it28 from './pics/items/it28.png'
-import it29 from './pics/items/it29.png'
-import it30 from './pics/items/it30.png'
+import it16 from '../pics/items/it16.png'
+import it17 from '../pics/items/it17.png'
+import it18 from '../pics/items/it18.png'
+import it19 from '../pics/items/it19.png'
+import it20 from '../pics/items/it20.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,34 +37,34 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'Samsung',
-            des: 'SAMSUNG TAB A9+ Tablet, 11-inch, 4GB RAM, 64GB, Wi-Fi, SM-X210NZAAMEA – Grey',
-            price: 220,
-            image: it26
+            name: 'Microsoft',
+            des: 'Xbox Live 15 EU Gift Card (Europe Store)',
+            price: 20,
+            image: it16
         },
         {
             name: 'Apple',
-            des: 'Apple iPad Pro M4 256GB 8GB RAM WIFI 11-inch Tablet - Space Black',
-            price: 435.99,
-            image: it27
+            des: 'Apple App Store & iTunes Gift Card $4',
+            price: 4,
+            image: it17
         },
         {
-            name: 'huawei',
-            des: 'HUAWEI MATEPAD Tablet 11.5-inch 8GB RAM 128 GB HarmonyOS 3.1 BARTOK-W09C - Space Grey',
+            name: 'Amazon',
+            des: 'Amazon Gift Card $10 (U.S. Account)',
             price: 10,
-            image: it28
+            image: it18
         },
         {
-            name: 'Honor',
-            des: 'Honor Pad X9 Tablet, 11.5-inch, 4GB RAM, 128GB Memory, 5301AGHT – Grey',
-            price: 310,
-            image: it29
+            name: 'Riot',
+            des: 'Valorant Gift Card $50 (for US account only)',
+            price: 800,
+            image: it19
         },
         {
-            name: 'XIAOMI',
-            des: 'XIAOMI Pad 6 Tablet, 11-inch, 8GB RAM, 256GB, 23043RP34G – Blue',
-            price: 30.99,
-            image: it30
+            name: 'Steam',
+            des: 'Steam Wallet Gift Card - 30 KWD',
+            price: 50,
+            image: it20
         },
     ];
 

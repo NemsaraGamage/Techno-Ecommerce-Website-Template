@@ -17,14 +17,14 @@ import disCata5 from '../pics/introCata/cat5.jpg'
 import disCata6 from '../pics/introCata/cat6.jpg'
 
 // item carousel
-import ItemCarousel from '../itemCarousel1'
-import ItemCarousel2 from '../itemCarousel2'
-import ItemCarousel3 from '../itemCarousel3'
-import ItemCarousel4 from '../itemCarousel4'
-import ItemCarousel5 from '../itemCarousel5'
-import ItemCarousel6 from '../itemCarousel6'
-import ItemCarousel7 from '../itemCarousel7'
-import ItemCarousel8 from '../itemCarousel8'
+import ItemCarousel from '../product-items/itemCarousel1'
+import ItemCarousel2 from '../product-items/itemCarousel2'
+import ItemCarousel3 from '../product-items/itemCarousel3'
+import ItemCarousel4 from '../product-items/itemCarousel4'
+import ItemCarousel5 from '../product-items/itemCarousel5'
+import ItemCarousel6 from '../product-items/itemCarousel6'
+import ItemCarousel7 from '../product-items/itemCarousel7'
+import ItemCarousel8 from '../product-items/itemCarousel8'
 
 // mid banner
 import midban1 from '../pics/banners/midBan1.jpg';

@@ -75,7 +75,7 @@ function AccountPopup({ isOpen, closePopup }) {
     fontSize: '0.8rem',
     cursor: 'pointer',
     transition: 'background-color 0.3s',
-    marginTop: '20px'
+    marginTop: '30px'
   };
 
   const overlayStyle = {
@@ -104,8 +104,6 @@ function AccountPopup({ isOpen, closePopup }) {
             label="password" 
             fullWidth 
           />
-          <p style={popupTextStyle}>Don't have an account?</p>
-          <p style={popupText2Style}>Create an account</p>
           <button
             style={popupCloseButtonStyle}
             onClick={closePopup}
@@ -114,6 +112,8 @@ function AccountPopup({ isOpen, closePopup }) {
           >
             Log in 
           </button>
+          <p style={popupTextStyle}>Don't have an account?</p>
+          <p style={popupText2Style}>Create an account</p>
         </div>
       </Popup>
     </div>

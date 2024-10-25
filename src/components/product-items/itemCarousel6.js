@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it6 from './pics/items/it6.png'
-import it7 from './pics/items/it7.png'
-import it8 from './pics/items/it8.png'
-import it9 from './pics/items/it9.png'
-import it10 from './pics/items/it10.png'
+import it26 from '../pics/items/it26.png'
+import it27 from '../pics/items/it27.png'
+import it28 from '../pics/items/it28.png'
+import it29 from '../pics/items/it29.png'
+import it30 from '../pics/items/it30.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -38,34 +38,34 @@ export default function BasicDemo() {
     const customProducts = [
         {
             name: 'Samsung',
-            des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-S926BZKCMEA – Titanium Black',
-            price: 850,
-            image: it6
-        },
-        {
-            name: 'Samsung',
-            des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-S926BZVCMEA – Titanium Violet',
-            price: 800,
-            image: it7
+            des: 'SAMSUNG TAB A9+ Tablet, 11-inch, 4GB RAM, 64GB, Wi-Fi, SM-X210NZAAMEA – Grey',
+            price: 220,
+            image: it26
         },
         {
             name: 'Apple',
-            des: 'Apple iPhone 16 Pro 6.3-inch 256GB Black Titanium',
-            price: 1450,
-            image: it8
+            des: 'Apple iPad Pro M4 256GB 8GB RAM WIFI 11-inch Tablet - Space Black',
+            price: 435.99,
+            image: it27
         },
         {
-            name: 'Apple',
-            des: 'Apple iPhone 16 Plus 6.7-inch 256GB Pink',
-            price: 1999,
-            image: it9
+            name: 'huawei',
+            des: 'HUAWEI MATEPAD Tablet 11.5-inch 8GB RAM 128 GB HarmonyOS 3.1 BARTOK-W09C - Space Grey',
+            price: 10,
+            image: it28
         },
         {
-            name: 'Samsung',
-            des: 'Samsung Galaxy Z Flip 4 5G 256GB Phone - Graphite',
-            price: 799,
-            image: it10
-        }
+            name: 'Honor',
+            des: 'Honor Pad X9 Tablet, 11.5-inch, 4GB RAM, 128GB Memory, 5301AGHT – Grey',
+            price: 310,
+            image: it29
+        },
+        {
+            name: 'XIAOMI',
+            des: 'XIAOMI Pad 6 Tablet, 11-inch, 8GB RAM, 256GB, 23043RP34G – Blue',
+            price: 30.99,
+            image: it30
+        },
     ];
 
     useEffect(() => {

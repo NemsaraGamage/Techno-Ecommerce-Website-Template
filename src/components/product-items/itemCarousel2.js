@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it6 from './pics/items/it6.png'
-import it7 from './pics/items/it7.png'
-import it8 from './pics/items/it8.png'
-import it9 from './pics/items/it9.png'
-import it10 from './pics/items/it10.png'
+import it6 from '../pics/items/it6.png'
+import it7 from '../pics/items/it7.png'
+import it8 from '../pics/items/it8.png'
+import it9 from '../pics/items/it9.png'
+import it10 from '../pics/items/it10.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);

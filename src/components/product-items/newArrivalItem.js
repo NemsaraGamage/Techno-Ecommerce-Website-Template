@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it21 from './pics/items/it21.png'
-import it22 from './pics/items/it22.png'
-import it23 from './pics/items/it23.png'
-import it24 from './pics/items/it24.png'
-import it25 from './pics/items/it25.png'
+import it6 from '../pics/items/it6.png'
+import it7 from '../pics/items/it7.png'
+import it8 from '../pics/items/it8.png'
+import it9 from '../pics/items/it9.png'
+import it10 from '../pics/items/it10.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,35 +37,35 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'Ayaneo',
-            des: 'Ayaneo 2 Handheld Gaming Console, AMD Ryzen 7, 32GB RAM, 2TB Storage – White',
-            price: 435,
-            image: it21
+            name: 'Samsung',
+            des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-S926BZKCMEA – Titanium Black',
+            price: 850,
+            image: it6
         },
         {
-            name: 'PNY',
-            des: 'PNY GeForce RTX 3090 24GB XLR8 Revel Epic-X RGB Gaming Graphics Card Triple Fan',
-            price: 700,
-            image: it22
+            name: 'Samsung',
+            des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-S926BZVCMEA – Titanium Violet',
+            price: 800,
+            image: it7
         },
         {
-            name: 'Steelseries',
-            des: 'Steelseries Arctis Nova Pro Wired Gaming Headset For PC and Playstation',
-            price: 10,
-            image: it23
+            name: 'Apple',
+            des: 'Apple iPhone 16 Pro 6.3-inch 256GB Black Titanium',
+            price: 1450,
+            image: it8
         },
         {
-            name: 'Sony',
-            des: 'Sony PlayStation 5 Gaming Bundle of Slim - Disc Edition Console + Portal Remote Player',
-            price: 310,
-            image: it24
+            name: 'Apple',
+            des: 'Apple iPhone 16 Plus 6.7-inch 256GB Pink',
+            price: 1999,
+            image: it9
         },
         {
-            name: 'SADES',
-            des: 'Sades K13 Sickle Mechanical Gaming Keyboard',
-            price: 30.99,
-            image: it25
-        },
+            name: 'Samsung',
+            des: 'Samsung Galaxy Z Flip 4 5G 256GB Phone - Graphite',
+            price: 799,
+            image: it10
+        }
     ];
 
     useEffect(() => {

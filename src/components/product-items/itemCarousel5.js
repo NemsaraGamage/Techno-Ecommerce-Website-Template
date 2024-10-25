@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it1 from './pics/items/it1.jpg'
-import it2 from './pics/items/it2.png'
-import it3 from './pics/items/it3.png'
-import it4 from './pics/items/it4.png'
-import it5 from './pics/items/it5.png'
+import it21 from '../pics/items/it21.png'
+import it22 from '../pics/items/it22.png'
+import it23 from '../pics/items/it23.png'
+import it24 from '../pics/items/it24.png'
+import it25 from '../pics/items/it25.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,36 +37,35 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'iPhone 12',
-            des: 'iPhone 12 128GB 6.1-inch',
-            price: 400.99,
-            image: it1
+            name: 'Ayaneo',
+            des: 'Ayaneo 2 Handheld Gaming Console, AMD Ryzen 7, 32GB RAM, 2TB Storage – White',
+            price: 435,
+            image: it21
         },
         {
-            name: 'HONOR Magic V2 ',
-            des: 'HONOR Magic V2 7.92-inch, 16GB RAM, 512GB',
-            des2: ' ',
-            price: 49.99,
-            image: it2
-        },
-        {
-            name: 'Apple iPad Pro 2022',
-            des: 'Apple iPad Pro 2022 M2 256GB 12.9-inch WiFI',
+            name: 'PNY',
+            des: 'PNY GeForce RTX 3090 24GB XLR8 Revel Epic-X RGB Gaming Graphics Card Triple Fan',
             price: 700,
-            image: it3
+            image: it22
         },
         {
-            name: 'Canon EOS R6 Mark II',
-            des: 'Canon EOS R6 Mark II Full Frame RF Mirrorless Camera & 24-105mm F4 Lens IS USM',
-            price: 1999,
-            image: it4
+            name: 'Steelseries',
+            des: 'Steelseries Arctis Nova Pro Wired Gaming Headset For PC and Playstation',
+            price: 10,
+            image: it23
         },
         {
-            name: 'Sony Bravia 9',
-            des: 'Sony Bravia 9 75” 4K Mini LED UHD Google TV',
-            price: 1699,
-            image: it5
-        }
+            name: 'Sony',
+            des: 'Sony PlayStation 5 Gaming Bundle of Slim - Disc Edition Console + Portal Remote Player',
+            price: 310,
+            image: it24
+        },
+        {
+            name: 'SADES',
+            des: 'Sades K13 Sickle Mechanical Gaming Keyboard',
+            price: 30.99,
+            image: it25
+        },
     ];
 
     useEffect(() => {

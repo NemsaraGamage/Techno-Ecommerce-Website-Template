@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it11 from './pics/items/it11.png'
-import it12 from './pics/items/it12.png'
-import it13 from './pics/items/it13.png'
-import it14 from './pics/items/it14.png'
-import it15 from './pics/items/it15.png'
+import it36 from '../pics/items/it36.png'
+import it37 from '../pics/items/it37.png'
+import it38 from '../pics/items/it38.png'
+import it39 from '../pics/items/it39.png'
+import it40 from '../pics/items/it40.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,34 +37,34 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'ASUS',
-            des: 'Asus ROG Strix SCAR 18 Gaming Laptop, Intel Core i9, 64GB RAM, 2TB SSD, nVidia GeForce – Black',
-            price: 2499,
-            image: it14
+            name: 'Acer',
+            des: 'Acer Nitro VG271Z Gaming Monitor, IPS, FHD,27 inch, 280HZ, 0.5ms, VG271ZBMIIPX',
+            price: 120,
+            image: it36
         },
         {
-            name: 'HUAWEI',
-            des: 'Huawei MateBook X Pro 2023 Laptop, Intel Core i7 Processor, 16 GB RAM, 1 TB SSD - White',
-            price: 745,
-            image: it15
+            name: 'LG',
+            des: 'LG 27" FHD Borderless Gaming Monitor, 100Hz, 27MR400-B – Black',
+            price: 235.99,
+            image: it37
         },
         {
-            name: 'Apple',
-            des: 'Apple MacBook Air M2, 8GB RAM, 512GB SSD, 13.6-inch (2022) - Midnight',
-            price: 1150,
-            image: it11
+            name: 'Philips',
+            des: 'Philips QD OLED Curved Gaming Monitor, 34-inch, 34M2C8600 - White',
+            price: 410,
+            image: it38
         },
         {
-            name: 'Apple',
-            des: 'Apple MacBook Air M2, 8GB RAM, 256GB SSD, 13.6-inch (2022) - Silver',
-            price: 800,
-            image: it13
+            name: 'Acer',
+            des: 'Acer Nitro XV271UM3 Gaming Monitor, IPS, QHD ,27 inch ,180HZ, 0.5ms, XV271UM3BMIIPRX',
+            price: 740,
+            image: it39
         },
         {
-            name: 'LENOVO',
-            des: 'Lenovo Yogabook 9i Intel Core i7 13th Gen, 16GB RAM, 1TB SSD, Two 13.3-inch Displays, Intel Iris Xe Graphics, Windows 11 Laptop',
-            price: 1450,
-            image: it12
+            name: 'Corsair',
+            des: 'Corsair XENEON 27-inch QHD OLED Gaming Monitor – Black',
+            price: 30.99,
+            image: it40
         },
     ];
 

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it31 from './pics/items/it31.png'
-import it32 from './pics/items/it32.png'
-import it33 from './pics/items/it33.png'
-import it34 from './pics/items/it34.png'
-import it35 from './pics/items/it35.png'
+import it11 from '../pics/items/it11.png'
+import it12 from '../pics/items/it12.png'
+import it13 from '../pics/items/it13.png'
+import it14 from '../pics/items/it14.png'
+import it15 from '../pics/items/it15.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,34 +37,34 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'Canon',
-            des: 'Canon EOS R100 Mirrorless Camera + RF-S 18-45mm Lens (6052C013AA)',
-            price: 120,
-            image: it31
+            name: 'ASUS',
+            des: 'Asus ROG Strix SCAR 18 Gaming Laptop, Intel Core i9, 64GB RAM, 2TB SSD, nVidia GeForce – Black',
+            price: 2499,
+            image: it14
         },
         {
-            name: 'Canon',
-            des: 'Canon EOS R50 Mirrorless Camera + RF-S 18-45mm f4.5-6.3 IS STM Lens, 5811C013AA – Black',
-            price: 235.99,
-            image: it32
+            name: 'HUAWEI',
+            des: 'Huawei MateBook X Pro 2023 Laptop, Intel Core i7 Processor, 16 GB RAM, 1 TB SSD - White',
+            price: 745,
+            image: it15
         },
         {
-            name: 'Nikon',
-            des: 'Nikon Z30 4K Mirrorless Digital Camera Kit, with16-50mm Lens - Black',
-            price: 410,
-            image: it33
+            name: 'Apple',
+            des: 'Apple MacBook Air M2, 8GB RAM, 512GB SSD, 13.6-inch (2022) - Midnight',
+            price: 1150,
+            image: it11
         },
         {
-            name: 'Nikon',
-            des: 'Nikon D850 DSLR Camera',
-            price: 740,
-            image: it34
+            name: 'Apple',
+            des: 'Apple MacBook Air M2, 8GB RAM, 256GB SSD, 13.6-inch (2022) - Silver',
+            price: 800,
+            image: it13
         },
         {
-            name: 'Sony',
-            des: 'Sony Alpha 7C Compact Full-Frame Mirrorless Camera - Silver',
-            price: 30.99,
-            image: it35
+            name: 'LENOVO',
+            des: 'Lenovo Yogabook 9i Intel Core i7 13th Gen, 16GB RAM, 1TB SSD, Two 13.3-inch Displays, Intel Iris Xe Graphics, Windows 11 Laptop',
+            price: 1450,
+            image: it12
         },
     ];
 

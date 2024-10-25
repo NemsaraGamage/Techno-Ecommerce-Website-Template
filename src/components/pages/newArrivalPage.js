@@ -4,7 +4,7 @@ import NavBarHead from '../NavBar';
 import Footer from '../Footer';
 
 // items
-import NewArrivalItem from '../newArrivalItem'
+import NewArrivalItem from '../product-items/newArrivalItem'
 
 // banners
 import ban5 from '../pics/banners/ban5.jpg';

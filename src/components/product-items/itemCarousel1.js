@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it16 from './pics/items/it16.png'
-import it17 from './pics/items/it17.png'
-import it18 from './pics/items/it18.png'
-import it19 from './pics/items/it19.png'
-import it20 from './pics/items/it20.png'
+import it1 from '../pics/items/it1.jpg'
+import it2 from '../pics/items/it2.png'
+import it3 from '../pics/items/it3.png'
+import it4 from '../pics/items/it4.png'
+import it5 from '../pics/items/it5.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,35 +37,36 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'Microsoft',
-            des: 'Xbox Live 15 EU Gift Card (Europe Store)',
-            price: 20,
-            image: it16
+            name: 'iPhone 12',
+            des: 'iPhone 12 128GB 6.1-inch',
+            price: 400.99,
+            image: it1
         },
         {
-            name: 'Apple',
-            des: 'Apple App Store & iTunes Gift Card $4',
-            price: 4,
-            image: it17
+            name: 'HONOR Magic V2 ',
+            des: 'HONOR Magic V2 7.92-inch, 16GB RAM, 512GB',
+            des2: ' ',
+            price: 49.99,
+            image: it2
         },
         {
-            name: 'Amazon',
-            des: 'Amazon Gift Card $10 (U.S. Account)',
-            price: 10,
-            image: it18
+            name: 'Apple iPad Pro 2022',
+            des: 'Apple iPad Pro 2022 M2 256GB 12.9-inch WiFI',
+            price: 700,
+            image: it3
         },
         {
-            name: 'Riot',
-            des: 'Valorant Gift Card $50 (for US account only)',
-            price: 800,
-            image: it19
+            name: 'Canon EOS R6 Mark II',
+            des: 'Canon EOS R6 Mark II Full Frame RF Mirrorless Camera & 24-105mm F4 Lens IS USM',
+            price: 1999,
+            image: it4
         },
         {
-            name: 'Steam',
-            des: 'Steam Wallet Gift Card - 30 KWD',
-            price: 50,
-            image: it20
-        },
+            name: 'Sony Bravia 9',
+            des: 'Sony Bravia 9 75” 4K Mini LED UHD Google TV',
+            price: 1699,
+            image: it5
+        }
     ];
 
     useEffect(() => {

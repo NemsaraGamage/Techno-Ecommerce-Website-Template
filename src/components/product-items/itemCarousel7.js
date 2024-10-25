@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Button, Flex } from 'antd';
 import { Carousel } from 'primereact/carousel';
 
-import it36 from './pics/items/it36.png'
-import it37 from './pics/items/it37.png'
-import it38 from './pics/items/it38.png'
-import it39 from './pics/items/it39.png'
-import it40 from './pics/items/it40.png'
+import it31 from '../pics/items/it31.png'
+import it32 from '../pics/items/it32.png'
+import it33 from '../pics/items/it33.png'
+import it34 from '../pics/items/it34.png'
+import it35 from '../pics/items/it35.png'
 
 export default function BasicDemo() {
     const [products, setProducts] = useState([]);
@@ -37,34 +37,34 @@ export default function BasicDemo() {
     // Custom product data
     const customProducts = [
         {
-            name: 'Acer',
-            des: 'Acer Nitro VG271Z Gaming Monitor, IPS, FHD,27 inch, 280HZ, 0.5ms, VG271ZBMIIPX',
+            name: 'Canon',
+            des: 'Canon EOS R100 Mirrorless Camera + RF-S 18-45mm Lens (6052C013AA)',
             price: 120,
-            image: it36
+            image: it31
         },
         {
-            name: 'LG',
-            des: 'LG 27" FHD Borderless Gaming Monitor, 100Hz, 27MR400-B – Black',
+            name: 'Canon',
+            des: 'Canon EOS R50 Mirrorless Camera + RF-S 18-45mm f4.5-6.3 IS STM Lens, 5811C013AA – Black',
             price: 235.99,
-            image: it37
+            image: it32
         },
         {
-            name: 'Philips',
-            des: 'Philips QD OLED Curved Gaming Monitor, 34-inch, 34M2C8600 - White',
+            name: 'Nikon',
+            des: 'Nikon Z30 4K Mirrorless Digital Camera Kit, with16-50mm Lens - Black',
             price: 410,
-            image: it38
+            image: it33
         },
         {
-            name: 'Acer',
-            des: 'Acer Nitro XV271UM3 Gaming Monitor, IPS, QHD ,27 inch ,180HZ, 0.5ms, XV271UM3BMIIPRX',
+            name: 'Nikon',
+            des: 'Nikon D850 DSLR Camera',
             price: 740,
-            image: it39
+            image: it34
         },
         {
-            name: 'Corsair',
-            des: 'Corsair XENEON 27-inch QHD OLED Gaming Monitor – Black',
+            name: 'Sony',
+            des: 'Sony Alpha 7C Compact Full-Frame Mirrorless Camera - Silver',
             price: 30.99,
-            image: it40
+            image: it35
         },
     ];
 
