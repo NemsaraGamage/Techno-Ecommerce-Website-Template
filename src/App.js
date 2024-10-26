@@ -3,12 +3,12 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import HomePage from './components/pages/homePage'
-import ProductPage from './components/pages/productsPage';
-import PhoneProductPage from './components/pages/phoneProductsPage';
-import LaptopProductPage from './components/pages/laptopProductsPage';
-import TabletProductPage from './components/pages/tabletsProductsPage';
-import HeadphonesProductPage from './components/pages/headphonesProductsPage';
 import NewArrivalPage from './components/pages/newArrivalPage';
+import ProductPage from './components/category-Products/productsPage';
+import PhoneProductPage from './components/category-Products/phoneProductsPage';
+import LaptopProductPage from './components/category-Products/laptopProductsPage';
+import TabletProductPage from './components/category-Products/tabletsProductsPage';
+import HeadphonesProductPage from './components/category-Products/headphonesProductsPage';
 
 function App() {
   return (

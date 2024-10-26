@@ -9,12 +9,12 @@ import Footer from '../Footer';
 import Carousel from '../carousel'
 
 // intro category images 
-import disCata1 from '../pics/introCata/cat1.jpg'
-import disCata2 from '../pics/introCata/cat2.jpg'
-import disCata3 from '../pics/introCata/cat3.jpg'
-import disCata4 from '../pics/introCata/cat4.jpg'
-import disCata5 from '../pics/introCata/cat5.jpg'
-import disCata6 from '../pics/introCata/cat6.jpg'
+import disCate1 from '../pics/introCategory/cat1.jpg'
+import disCate2 from '../pics/introCategory/cat2.jpg'
+import disCate3 from '../pics/introCategory/cat3.jpg'
+import disCate4 from '../pics/introCategory/cat4.jpg'
+import disCate5 from '../pics/introCategory/cat5.jpg'
+import disCate6 from '../pics/introCategory/cat6.jpg'
 
 // item carousel
 import ItemCarousel from '../product-items/itemCarousel1'
@@ -45,12 +45,12 @@ const HomePage = () => {
 
         {/* intro category */}
         <div className='displayCata'>
-            <img src={disCata1}></img>
-            <img src={disCata2}></img>
-            <img src={disCata3}></img>
-            <img src={disCata4}></img>
-            <img src={disCata5}></img>
-            <img src={disCata6}></img>
+            <img src={disCate1}></img>
+            <img src={disCate2}></img>
+            <img src={disCate3}></img>
+            <img src={disCate4}></img>
+            <img src={disCate5}></img>
+            <img src={disCate6}></img>
         </div>
 
         {/* item carousels */}
