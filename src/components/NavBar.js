@@ -45,8 +45,7 @@ const NavBar = () => {
                   <Link to="/PhoneProductPage">Phones</Link>
                   <Link to="/LaptopProductPage">Laptops</Link>
                   <Link to="/TabletProductPage">Tablets</Link>
-                  <Link to="/ProductsDisplayPage">Cameras</Link>
-                  <Link to="/ProductsDisplayPage">Headphones</Link>
+                  <Link to="/HeadphoneProductPage">Headphones</Link>
                 </div>
               </div>
               <Link to="/NewArrivalPage" className="nav-link">New Arrivals</Link>
@@ -89,9 +88,8 @@ const NavBar = () => {
             <div className="dropdown-content">
               <Link to="/PhoneProductPage" onClick={handleDrawerToggle}>Phones</Link>
               <Link to="/LaptopProductPage" onClick={handleDrawerToggle}>Laptops</Link>
-              <Link to="/ProductsDisplayPage" onClick={handleDrawerToggle}>Tablets</Link>
-              <Link to="/ProductsDisplayPage" onClick={handleDrawerToggle}>Cameras</Link>
-              <Link to="/ProductsDisplayPage" onClick={handleDrawerToggle}>Headphones</Link>
+              <Link to="/TabletProductPage" onClick={handleDrawerToggle}>Tablets</Link>
+              <Link to="/HeadphoneProductPage" onClick={handleDrawerToggle}>Headphones</Link>
             </div>
           </div>
           <Link to="/NewArrivalPage" className="nav-link" onClick={handleDrawerToggle}>New Arrivals</Link>

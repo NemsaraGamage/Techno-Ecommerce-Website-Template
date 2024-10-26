@@ -7,6 +7,7 @@ import ProductPage from './components/pages/productsPage';
 import PhoneProductPage from './components/pages/phoneProductsPage';
 import LaptopProductPage from './components/pages/laptopProductsPage';
 import TabletProductPage from './components/pages/tabletsProductsPage';
+import HeadphonesProductPage from './components/pages/headphonesProductsPage';
 import NewArrivalPage from './components/pages/newArrivalPage';
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
 
         {/* Tablet Product Page */}
         <Route path="/TabletProductPage" element={<TabletProductPage></TabletProductPage>} />
+
+        {/* Headphones Product Page */}
+        <Route path="/HeadphoneProductPage" element={<HeadphonesProductPage></HeadphonesProductPage>} />
 
         {/* New Arrival Page */}
         <Route path="/NewArrivalPage" element={<NewArrivalPage></NewArrivalPage>} />
