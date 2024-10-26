@@ -593,7 +593,7 @@
   .midBannerCat img {
     max-width: 100%; 
     padding: 0 10px;
-    height: 100px;
+    height: 90px;
   }
 
   /* items carousel */
@@ -616,7 +616,7 @@
     max-width: 100%;
   }
 
-   /* ------------- product page ------ */  
+  /* ------------- product page ------ */  
   .product-list {
     grid-template-columns: repeat(2, 1fr); 
     width: 109%;
@@ -633,5 +633,12 @@
   .product-card:hover {
     box-shadow: none;
   }
-  
+
+  /* New Arrival page */
+
+  .newArrivalBan img {
+    max-width: 98%;
+    width: 100%;
+  }
+
 }
