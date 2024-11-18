@@ -23,7 +23,7 @@ export const products = [
     { id: 2,  
         color: 'black',
         name: 'Samsung',
-        des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-S926BZKCMEA – Titanium Black',
+        des: 'Samsung Galaxy S24 Ultra Phone, 6.8-inch, 12GB RAM, 256GB, SM-...',
         price: 850,
         image: it6,
     },

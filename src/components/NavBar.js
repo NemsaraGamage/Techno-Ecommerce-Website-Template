@@ -46,6 +46,7 @@ const NavBar = () => {
                   <Link to="/LaptopProductPage">Laptops</Link>
                   <Link to="/TabletProductPage">Tablets</Link>
                   <Link to="/HeadphoneProductPage">Headphones</Link>
+                  <Link to="/">Gaming</Link>
                 </div>
               </div>
               <Link to="/NewArrivalPage" className="nav-link">New Arrivals</Link>
@@ -90,6 +91,7 @@ const NavBar = () => {
               <Link to="/LaptopProductPage" onClick={handleDrawerToggle}>Laptops</Link>
               <Link to="/TabletProductPage" onClick={handleDrawerToggle}>Tablets</Link>
               <Link to="/HeadphoneProductPage" onClick={handleDrawerToggle}>Headphones</Link>
+              <Link to="/" onClick={handleDrawerToggle}>Gaming</Link>
             </div>
           </div>
           <Link to="/NewArrivalPage" className="nav-link" onClick={handleDrawerToggle}>New Arrivals</Link>
